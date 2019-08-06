@@ -226,7 +226,6 @@
 
 
 
-<div class="pagename">Take a Test</div>
 
 <form id="form2" name="form2" method="GET" action="">
 <input type="hidden" value="2" id="forTestid" name="forTest">
@@ -246,18 +245,6 @@
 <div class="buycoupon-namerow">
 <div class="test">
 <div class="test-tab-box">
-<div class="tabs">
-<ul id="tabs">
-<li onclick="testTabs1('cont-1')" class="active" id="cont-1"><a href="javascript:void(0)">GATE</a></li>
-<li class="combo" style="display:none">
-<input name="" type="text" class="newsearch" placeholder="Search" id="searchBox" autocomplete="off">
-<a href="javascript:void(0)" onclick="searchbox();" id="arrow" title="Click for Advance Search">
-</a>
-<ul id="dropsearch" name="dropdownsearch" style="display:none;">
-</ul>
-</li>
-</ul>
-</div>
 
 
 
@@ -295,14 +282,6 @@
     line-height: 14pt;"> <div class="cardinr test-container">
 <div class="taketest_main">
 <div class="taketesthdr">
-<div class="testdate_dash">
-<h3> 06 </h3>
-<span>Mar</span>
-</div>
-<div class="testdetails_dash">
-<h3 class="mt5"><strong>Demo Full Syllabus Test : {{ exam_name }}</strong></h3>
-<span class="grayinfo">Technical,General Aptitude</span>
-</div>
 <div class="remaining_time">
 <h3 class="mt5 greentext">207Days 9hours </h3>
 <span class="grayinfo">Time Remaining</span>
@@ -328,74 +307,9 @@
 </div>
 </div>
     {% endfor %}
-    <p style="background-color: #0063c6;
-    font-size: 16px;
-    margin-top: 10px;
-    padding: 13px;
-    text-align: center;
-    color: #fff;
-    box-shadow: 0 6px 35px 0px rgba(0,0,0,0.2)">
-Please
-<a style="border-bottom:1px solid #551a8b; color:#551a8b;" href="index.php?pageName=package">upgrade</a>
-to access the remaining Tests.
-</p><div style="opacity: 0.3;margin-top:10px">
-<div class="cardinr">
-<div class="taketest_main">
-<div class="taketesthdr">
-<div class="testdate_dash">
-<h3> 01 </h3>
-<span>Mar</span>
-</div>
-<div class="testdetails_dash">
-<h3 class="mt5"><strong>Basic : Theory of Computation (GATE - 2018)</strong></h3>
-<span class="grayinfo">Technical</span>
-</div>
-<div class="remaining_time">
-<h3 class="mt5 greentext">207Days 9hours </h3>
-<span class="grayinfo">Time Remaining</span>
-</div>
-</div>
- <div class="taketest_footer">
-<div class="testinrdiv">
-<div>Total Question</div>
-<h3>33</h3>
-</div>
-<div class="testinrdiv">
-<div>Total Marks</div>
-<h3>50</h3>
-</div>
-<div class="testinrdiv">
-<div class="test_lastinrdash">
-<div>Duration</div>
-<h3>90 min</h3>
-</div>
- </div>
-<div class="start-test-button">
-<a href="javascript:void(0)" class="gray">
-Inactive&nbsp;&nbsp;
-<img src="https://gw-mdsy.s3-accelerate.amazonaws.com/2019/student/images/help-test.png" align="top" class="img">
-</a></div>
-</div>
-</div>
-</div>
 
 
-<div class="drop-coloumn" id="prac" style="display:none;color: #535352;">
-<img src="https://gw-mdsy.s3-accelerate.amazonaws.com/2019/student/images/ajax-loader.gif" style="margin-top:15%;margin-left:50%">
-</div>
-<div class="drop-coloumn" id="isro" style="display:none;color: #535352;">
-<img src="https://gw-mdsy.s3-accelerate.amazonaws.com/2019/student/images/ajax-loader.gif" style="margin-top:15%;margin-left:50%">
 
-<div class="drop-coloumn" id="mppsc" style="display:none;color: #535352;">
- <img src="https://gw-mdsy.s3-accelerate.amazonaws.com/2019/student/images/ajax-loader.gif" style="margin-top:15%;margin-left:50%">
-</div>
-<div class="drop-coloumn" id="appsc" style="display:none;color: #535352;">
-<img src="https://gw-mdsy.s3-accelerate.amazonaws.com/2019/student/images/ajax-loader.gif" style="margin-top:15%;margin-left:50%">
-</div>
-<div class="drop-coloumn" id="coal" style="display:none;color: #535352;">
-<img src="https://gw-mdsy.s3-accelerate.amazonaws.com/2019/student/images/ajax-loader.gif" style="margin-top:15%;margin-left:50%">
-</div>
-</div>
 
 </div>
 
@@ -1016,13 +930,9 @@ Inactive&nbsp;&nbsp;
     }
 
 
-</script>
-<script>
-    $(document).ready(function(){
-        $("#preloader1").hide();
-    })
-</script>
+</script> 
+
 
 {% endblock %}
 </body>
-</html>
+</html>  

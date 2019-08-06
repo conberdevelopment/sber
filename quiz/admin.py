@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Set
-from hvad.forms import TranslatableModelForm
-from parler.admin import TranslatableAdmin
+# from hvad.forms import TranslatableModelForm
+# from parler.admin import TranslatableAdmin
 from OnlineExamination.models import Question
 from .models import Result
 

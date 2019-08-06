@@ -122,8 +122,8 @@ def home(request):
     return render(request, 'index.html')
 
 
-def contact(request):
-    return render(request, 'contact.html')
+# def contact(request):
+#     return render(request, 'contact.html')
 
 
 def start_exam(request):
@@ -134,16 +134,16 @@ def start_exam(request):
         return render(request, '1.html', {'ques': ques})
 
 
-def report(request):
-    ur = request.session['z']
-    exam_name = request.session['name']
-    instance = get_object_or_404(Student, user=ur)
-    context = {
-        'ur': ur,
-        'instance': instance,
-        'exam_name': exam_name,
-    }
-    return render(request, 'REPORT.html', context)
+# def report(request):
+#     ur = request.session['z']
+#     exam_name = request.session['name']
+#     instance = get_object_or_404(Student, user=ur)
+#     context = {
+#         'ur': ur,
+#         'instance': instance,
+#         'exam_name': exam_name,
+#     }
+#     return render(request, 'REPORT.html', context)
 
 
 def analysis(request):
@@ -171,3 +171,6 @@ def logout(request):
     if request.session.has_key('z'):
         request.session.flush()
     return redirect('/home')
+
+
+
